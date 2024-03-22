@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<section>
+    <div class="derechos">
+        <p>Hecho por <a href=""><span>Jhoann Zamudio</span></a> Desarrollador de Software | Polimericos Internacional todos los derechos reservados 2024</p> 
+    </div>
+</section>
+
+<style>
+    section{
+        background-color: var(--gold);
+        text-align: center;
+        padding: 10px;
+    }
+    section p a span{
+        letter-spacing: 1px;
+        font-weight: 900;
+    }
+
+    @media only screen and (max-width: 600px){
+        section p {
+        font-size: 10px;
+    }
+    }
+</style>

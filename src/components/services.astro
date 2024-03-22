@@ -1,0 +1,228 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<section>
+  <article>
+    <h2>
+      <span>3 Mejores </span> razones para adquirir <span
+        >los servicios de Dial.</span>
+    </h2>
+
+    <div class="servicios">
+      <div class="container">
+        <div class="box">
+          <span class="title">TRABAJOS PROFESIONALES</span>
+          <div>
+            <strong> ¡Realización de proyectos sumamente profesionales!</strong>
+            <span>De:</span>
+            <span>Polimericos Dial de CO </span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box">
+          <span class="title">CAPACITACIÓN VIRTUAL Y PRESENCIAL</span>
+          <div>
+            <strong>Capacitaciones en diferentes tecnicas y sistemas de acabado y personalizacion.</strong>
+            <span>De:</span>
+            <span>Polimericos Dial de CO </span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box">
+          <span class="title">INSUMOS DE ALTA CALIDAD</span>
+          <div>
+            <strong>Venta de todo tipo de insumos alta calidad.</strong>
+            <span>De:</span>
+            <span>Polimericos Dial de CO </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+<style>
+  section {
+    position: relative;
+    padding: 60px 30px;
+    min-height: 100vh;
+    width: 100%;
+    background: url("/img/servicios.jpg");
+    background-size: cover;
+  }
+  article {
+    backdrop-filter: blur(3px);
+    padding: 50px;
+    min-height: 100vh;
+    width: 100%;
+  }
+  article h2 {
+    font-size: 80px;
+    text-align: center;
+    color: var(--white);
+  }
+  article span {
+    font-weight: 900;
+  }
+  .servicios {
+    width: 100%;
+    margin: 100px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container {
+    color: white;
+    position: relative;
+  }
+
+
+  .container::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    top: 30%;
+    right: 7%;
+  }
+
+  .container::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    top: 8%;
+    right: 5%;
+    border: 1px solid;
+  }
+
+  .container .box {
+    cursor: pointer;
+    width: 90%;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.356);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(50px);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+  }
+
+  .container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container .box .title {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+
+  .container .box div strong {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .container .box div p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+
+  .container .box div span {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+
+  .container .box div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: 0.2rem;
+  }
+
+  .container .box:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+  }
+
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+
+    section {
+    padding: 0px;
+  }
+  article {
+    min-height: auto; /* Ajuste para que la altura se adapte al contenido */
+    width: 100%;
+  }
+  article h2 {
+    font-size: 40px; /* Reducción del tamaño de fuente para dispositivos móviles */
+  }
+  article span {
+    font-weight: 900; /* Ajuste de peso de fuente */
+  }
+  .servicios {
+    flex-direction: column; 
+    align-items: center; 
+    margin: 50px 0 0; 
+  }
+  .container {
+    color: white;
+    position: relative;
+    margin-bottom: 30px; 
+  }
+
+
+  .container .box {
+    width: 100%; 
+    height: 100%; 
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+    background-color: rgba(0, 0, 0, 0.452);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(50px); /* Ajuste del desenfoque de fondo */
+    border-radius: 10px; /* Reducción del radio de borde */
+    transition: transform ease 0.3s, box-shadow ease 0.3s; /* Ajuste de transiciones */
+  }
+
+  .container .box:hover {
+    transform: translateY(-10px); /* Ajuste de la transformación en el hover */
+    box-shadow: 0px 0px 20px 5px #ffbb763f; /* Ajuste de la sombra en el hover */
+    border: 1px solid rgba(255, 255, 255, 0.7); /* Ajuste del color del borde en el hover */
+  }
+
+  .container .box .title {
+    font-size: 24px; /* Reducción del tamaño de fuente */
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px; /* Ajuste del margen inferior */
+  }
+
+  .container .box div strong {
+    display: block;
+    margin-bottom: 5px; /* Ajuste del margen inferior */
+    font-weight: 700; /* Ajuste del peso de la fuente */
+  }
+
+  .container .box div p {
+    margin: 0;
+    font-size: 16px; /* Reducción del tamaño de fuente */
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+
+  .container .box div span {
+    font-size: 14px; /* Reducción del tamaño de fuente */
+    font-weight: 300;
+  }
+
+  .container .box div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: 5px; /* Ajuste del margen derecho */
+  }
+  }
+</style>

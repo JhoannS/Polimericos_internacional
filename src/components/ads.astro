@@ -1,0 +1,241 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<section>
+  <div class="popup-overlay">
+    <div class="popup-container">
+      <div class="left">
+        <video src="/img/pop-up.mp4" autoplay></video>
+      </div>
+
+      <div class="right">
+        <div class="skip-button">Omitir en 3s</div>
+
+        <p class="logo">Polimericos Dial de co</p>
+        <h2 class="popup-heading">
+          LAS OPORTUNIDADES no aparecen, ¡tu las CREAS!
+        </h2>
+        <p class="description">
+          es momento de llevar tu negocio al siguiente NIVEL 🔥 Aprende con
+          NOSOTROS 🏆 Curso presencial San Salvador
+        </p>
+        <p>Contenido:</p>
+        <p>
+          2 Dias de práctica, insumos incluidos, apoyo de material PDF y videos. <br>
+          3 sistemas de cromado diferentes, hidroimpresión, pinturas especiales.
+          Descuentos en insumos.
+        </p>
+
+        <a href="#" class="visit-button">Me interesa</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="/js/main.js" : isline></script>
+<style>
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.637);
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    transition: all 700ms ease;
+  }
+
+  .popup-overlay.active {
+    opacity: 1;
+  }
+
+  .popup-container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, calc(-50% + 50px));
+    color: var(--white);
+    padding: 12px 0;
+    box-shadow: 0 6px 55px -10px rgba(0, 0, 0, 0.7);
+    background:var(--caoba);
+    width: 60%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 700ms ease;
+  }
+
+  .popup-overlay.active .popup-container {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .popup-container,
+  .popup-container * {
+    box-sizing: border-box;
+  }
+
+  .popup-container .left video {
+    position: absolute;
+    width: 230px;
+    bottom: 0;
+  }
+
+ 
+
+  .popup-container .right {
+    width: 100%;
+    padding: 30px;
+    padding-left: 250px;
+  }
+
+  .popup-container .skip-button {
+    position: absolute;
+    top: -15px;
+    right: -4px;
+    background: #000;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .popup-container p.logo {
+    font-size: 13px;
+    color: #febdff;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .popup-container h2.popup-heading {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .popup-container p.description {
+    font-size: 15px;
+    width: 100%;
+    line-height: 1.8;
+  }
+
+  .popup-container .visit-button {
+    background: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    border-radius: 12px;
+    padding: 8px 24px;
+    margin-top: 8px;
+    display: inline-block;
+  }
+
+  .popup-container .hero-image-small {
+    display: none;
+  }
+
+  /* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.637);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    transition: all 700ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup-overlay.active {
+    opacity: 1;
+  }
+
+  .popup-container {
+    position: relative;
+    color: var(--white);
+    padding : 20px; /* Ajuste del padding */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* Reducción de la sombra */
+    background: var(--caoba);
+    width: 90%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 700ms ease;
+    border-radius: 10px; /* Añadido de borde redondeado */
+  }
+
+  .popup-overlay.active .popup-container {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .popup-container * {
+    box-sizing: border-box;
+  }
+
+  .popup-container .left video {
+    width: 10%; /* Ancho completo para dispositivos móviles */
+    border-radius: 10px; /* Añadido de borde redondeado */
+    margin-bottom: 10px; /* Ajuste del margen inferior */
+  }
+
+  .popup-container .right {
+    width: 100%;
+    padding-left: 0; /* Eliminación del padding izquierdo */
+  }
+
+  .popup-container .skip-button {
+    position: absolute;
+    top: -10px; /* Ajuste de la posición */
+    right: -10px; /* Ajuste de la posición */
+    background: #000;
+    padding: 6px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    transform: translate(50%, -50%); /* Ajuste de la posición */
+  }
+
+  .popup-container p.logo {
+    font-size: 13px;
+    color: #febdff;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .popup-container h2.popup-heading {
+    font-size: 24px; /* Reducción del tamaño de fuente para dispositivos móviles */
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .popup-container p.description {
+    font-size: 14px; /* Reducción del tamaño de fuente para dispositivos móviles */
+    width: 100%;
+    line-height: 1.6; /* Ajuste del espaciado entre líneas */
+  }
+
+  .popup-container .visit-button {
+    background: #fff;
+    text-decoration: none;
+    font-size: 14px; /* Reducción del tamaño de fuente para dispositivos móviles */
+    font-weight: bold;
+    color: #000;
+    border-radius: 12px;
+    padding: 8px 20px; /* Ajuste del padding para dispositivos móviles */
+    margin-top: 8px;
+    display: inline-block;
+  }
+
+  .popup-container .hero-image-small {
+    display: none;
+  }
+}
+
+</style>

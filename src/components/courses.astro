@@ -1,0 +1,220 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<section>
+  <main>
+    <h3>¡Bienvenido a esta sección!</h3>
+    <div class="cursos">
+      <header>
+        <div class="group">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+            <g>
+              <path
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+              ></path>
+            </g>
+          </svg>
+          <input class="input" type="search" placeholder="Buscar curso..." />
+        </div>
+        <div class="right">
+          cantidad de cursos: <span>8</span>
+        </div>
+      </header>
+      <article>
+        <h4>¿Qué aprenderas hoy?</h4>
+        <p>Amplia gama de cursos GRATIS a tu disposición</p>
+      </article>
+      <a
+        href="https://www.youtube.com/watch?v=AgMe7oLLn-U&list=PLieXek9ZQ8RbL2jG-0qsDS44kFmjZFKiu&pp=iAQB" target="_blank"
+      >
+        <section class="cuerpo_cursos">
+          <p>Curso de PINTURA AUTOMOTRIZ 💣profesional PASO A PASO (29 videos)</p>
+        </section>
+      </a>
+
+      <a
+        href="https://www.youtube.com/watch?v=hnrQsLHfiEQ&list=PLieXek9ZQ8RYX99PZAl6GaeIJkVIOyuvR&pp=iAQB" target="_blank"
+      >
+        <section class="cuerpo_cursos">
+          <p>
+            Curso de PINTURA AUTOMOTRIZ VOL.2 / 🌟MASTER PAINTER CELEBRITY🌟 (17 videos)
+          </p>
+        </section>
+      </a>
+
+      <a
+        href="https://www.youtube.com/watch?v=HYeAeJOlNak&list=PLieXek9ZQ8RbY6L2G6Ro2hz-reEyaORlw&pp=iAQB" target="_blank"
+      >
+        <section class="cuerpo_cursos">
+          <p>CURSO DE TÉCNICAS DE PINTURA AUTOMOTRIZ VOL 3 (19 videos)
+        </p>
+        </section>
+      </a>
+
+      <a
+      href="https://www.youtube.com/watch?v=zzTLoiglvN4&list=PLieXek9ZQ8RZoujglkEFHXa_lDeyD0dVk&pp=iAQB" target="_blank"
+    >
+      <section class="cuerpo_cursos">
+        <p>Porcelanato liquido 3d curso practico (20 videos)
+        </p>
+      </section>
+    </a>
+
+    <a
+      href="https://www.youtube.com/watch?v=zzTLoiglvN4&list=PLieXek9ZQ8RZoujglkEFHXa_lDeyD0dVk&pp=iAQB" target="_blank"
+    >
+      <section class="cuerpo_cursos">
+        <p>
+            Nuevos metodos para cromar sin costosas maquinas (9 videos)
+
+        </p>
+      </section>
+    </a>
+
+    <a
+      href="https://www.youtube.com/watch?v=DBYOTOoWZCs&list=PLieXek9ZQ8RY5RJyLXDfZ4WmcqjYh3gHr&pp=iAQB" target="_blank"
+    >
+      <section class="cuerpo_cursos">
+        <p>Pinturas especiales y efectos novedosos (auto motriz) (23 videos)
+        </p>
+      </section>
+    </a>
+
+    <a
+      href="https://www.youtube.com/watch?v=6kvGx9aZDN4&list=PLieXek9ZQ8RYSH76A_mDA2MbnMH-6BBig&pp=iAQB" target="_blank"
+    >
+      <section class="cuerpo_cursos">
+        <p>Curso hidrocromo, cromo al agua o efecto espejo
+            (39 videos)
+        </p>
+      </section>
+    </a>
+
+    <a
+      href="https://www.youtube.com/watch?v=D5UDFtCVxBA&list=PLieXek9ZQ8RbcpHiMRAIve6_XwKgQTmoe&pp=iAQB" target="_blank"
+    >
+      <section class="cuerpo_cursos">
+        <p>Hidrografia o hidroimpresion curso
+            (10 videos)
+        </p>
+      </section>
+    </a>
+    </div>
+  </main>
+</section>
+
+<style>
+  section {
+    margin: 8% 30px;
+  }
+  main {
+    margin: 8% 0;
+    max-height: 100%;
+    width: 100%;
+    background-image: url("/img/courses.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 30px;
+  }
+  main h3 {
+    position: relative;
+    font-size: 60px;
+    color: var(--white);
+  }
+  .cursos {
+    position: relative;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  .cursos header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    width: 85%;
+  }
+
+  .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: var(--caoba);
+    transition: 0.3s ease;
+  }
+
+  .input::placeholder {
+    color: #;
+  }
+
+  .input:focus,
+  input:hover {
+    outline: none;
+    border-color: rgba(73, 53, 0, 0.4);
+    background-color: transparent;
+    box-shadow: 0 0 0 4px rgba(73, 56, 0, 0.1);
+  }
+
+  .icon {
+    position: absolute;
+    left: 1rem;
+    fill: var(--gold);
+    width: 1rem;
+    height: 1rem;
+  }
+
+  article h4 {
+    font-size: 35px;
+    color: var(--caoba);
+  }
+  .cuerpo_cursos {
+    margin: 20px 0;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+  }
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    section {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px 15px;
+      margin: 35% 0 0;
+    }
+    main h3 {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+    header {
+      flex-direction: column;
+      width: 100%;
+    }
+    .group {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    article h4 {
+      font-size: 23px;
+    }
+    article p {
+      font-size: 14px;
+    }
+  }
+</style>

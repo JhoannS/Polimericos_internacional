@@ -1,0 +1,360 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<footer>
+    <div class="logo">
+        <img src="/img/logo.png" alt="logo polimericos">
+        <h3>Polimericos Dial de Colombia</h3>
+        <p>Equipo profesional en diferentes áreas</p>
+    </div>
+    <div class="navegacion">
+        <div class="empresa">
+            <h4>Núestra empresa</h4>
+            <li><a href="">Tienda virtual.</a></li>
+            <li><a href="">Cursos virtuales.</a></li>
+            <li><a href="">Cursos presenciales.</a></li>
+            <li><a href="">Soporte & asesoria.</a></li>
+            <li><a href="">Emprendimiento.</a></li>
+        </div>
+        <div class="info">
+            <h4>Información</h4>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Contacto</a></li>
+        </div>
+    </div>
+    <div class="redes">
+        <h4>Obtén noticias y ofertas preferenciales:</h4>
+        <div class="search">
+            <div class="search-box">
+              <div class="search-field">
+                <input placeholder="example@some.com" class="input" type="email">
+                <div class="search-box-icon">
+                  <button class="btn-icon-content">
+                    <i class="search-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fff" d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"/></svg>
+                    </i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>Siguenos en nuestras redes y quedate al tanto.</h4>
+          <div class="socials">
+            <a href="">
+                <div class="icono-r">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            </a>
+
+            <a href="">
+                <div class="icono-r">
+                    <i class="fa-brands fa-instagram"></i>
+            </div>
+            </a>
+
+            <a href="">
+                <div class="icono-r">
+                    <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            </a>
+
+            <a href="">
+                <div class="icono-r">
+                    <i class="fa-brands fa-tiktok"></i>
+            </div>
+            </a>
+
+            <a href="">
+                <div class="icono-r">
+                    <i class="fa-brands fa-youtube"></i>
+            </div>
+            </a>
+           
+          </div>
+    </div>
+</footer>
+
+<style>
+  footer {
+    background-color: var(--caoba);
+    position: relative;
+    padding: 50px 30px;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img{
+    width: 200px;
+  }
+  .logo h3{
+    font-size: 23px;
+    color: var(--white);
+  }
+  .logo p{
+    color: var(--white-gray);
+  }
+  .navegacion{
+    display: flex;
+    justify-content: space-evenly;
+    width: 33%;
+  }
+  .navegacion h4{
+    font-size: 21px;
+    color: var(--white);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--gold);
+  }
+  .navegacion li{
+    transform: translateX(10px);
+    list-style: none;
+    color: var(--white-gray);
+    transition: .5s;
+  }
+  .navegacion li:hover{
+    color: var(--gold);
+    transform: translateX(-10px);
+  }
+  .redes{
+    width: 33%;
+  }
+  .redes h4{
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+  .search {
+  --input-line: #cccccc;
+  --input-text-color: #808080;
+  --input-text-hover-color: transparent;
+  --input-border-color: #808080;
+  --input-border-hover-color: #999999;
+  --input-bg-color: #333333;
+  --search-max-width: 250px;
+  --search-min-width: 150px;
+  --border-radius: 5px;
+  --transition-cubic-bezier: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.search-box {
+    width: 90%;
+  min-width: var(--search-min-width);
+  height: 35px;
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-radius);
+  padding: 5px 15px;
+  background: var(--input-bg-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-cubic-bezier);
+  margin-bottom: 20px;
+}
+
+.search-box:hover {
+  border-color: var(--input-border-hover-color);
+}
+
+/*Section input*/
+.search-field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: -5px;
+  border: 0;
+}
+
+.input {
+  width: calc(100% - 29px);
+  height: 100%;
+  border: 0;
+  border-color: transparent;
+  font-size: 1rem;
+  padding-right: 0px;
+  color: var(--input-line);
+  background: var(--input-bg-color);
+  border-right: 2px solid var(--input-border-color);
+  outline: none;
+}
+
+.input::-webkit-input-placeholder {
+  color: var(--input-text-color);
+}
+
+.input::-moz-input-placeholder {
+  color: var(--input-text-color);
+}
+
+.input::-ms-input-placeholder {
+  color: var(--input-text-color);
+}
+
+.input:focus::-webkit-input-placeholder {
+  color: var(--input-text-hover-color);
+}
+
+.input:focus::-moz-input-placeholder {
+  color: var(--input-text-hover-color);
+}
+
+.input:focus::-ms-input-placeholder {
+  color: var(--input-text-hover-color);
+}
+
+/*Search button*/
+.search-box-icon {
+  width: 52px;
+  height: 35px;
+  position: absolute;
+  top: -6px;
+  right: -21px;
+  background: transparent;
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  transition: var(--transition-cubic-bezier);
+}
+
+.search-box-icon:hover {
+  background: var(--input-border-color);
+}
+
+.btn-icon-content {
+  width: 52px;
+  height: 35px;
+  top: -6px;
+  right: -21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  transition: var(--transition-cubic-bezier);
+  opacity: .4;
+}
+
+.btn-icon-content:hover {
+  opacity: .8;
+}
+
+.search-icon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+.socials{
+    display: flex;
+    width: 100%;
+}
+.socials .icono-r{
+    display: grid;
+    place-content: center;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--caoba);
+    padding: 20px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    transition: .5s;
+}
+.icono-r i{
+    color: var(--white);
+    font-size: 20px;
+}
+a:hover .icono-r{
+    background-color: var(--white);
+    color: var(--caoba);
+    transform: translateY(-5px);
+}
+a:hover i{
+    color: var(--caoba);
+}
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  footer {
+    padding: 30px 25px; /* Ajuste del padding para dispositivos móviles */
+    flex-direction: column; /* Cambio de disposición a columna para dispositivos móviles */
+    align-items: center; /* Alineación central para dispositivos móviles */
+  }
+
+  .logo {
+    width: 100%; /* Ancho completo para dispositivos móviles */
+    margin-bottom: 40px; /* Ajuste del margen inferior */
+    text-align: center; /* Alineación central para dispositivos móviles */
+  }
+
+  .logo img {
+    width: 180px; /* Reducción del tamaño del logo para dispositivos móviles */
+  }
+
+  .logo h3 {
+    font-size: 25px; /* Reducción del tamaño de fuente para dispositivos móviles */
+  }
+
+  .navegacion {
+    width: 100%; /* Ancho completo para dispositivos móviles */
+    justify-content: space-between; /* Alineación central para dispositivos móviles */
+    margin-bottom: 20px; /* Ajuste del margen inferior */
+  }
+
+  .navegacion h4 {
+    font-size: 18px; /* Reducción del tamaño de fuente para dispositivos móviles */
+    margin-bottom: 10px; /* Ajuste del margen inferior */
+    border: none; /* Eliminación del borde inferior */
+  }
+
+  .navegacion li {
+    transform: translateX(0); /* Restaurar posición original */
+    margin-top: 5px;
+    margin-right:0px; /* Ajuste del margen derecho */
+  }
+
+  .redes {
+    width: 100%; /* Ancho completo para dispositivos móviles */
+  }
+
+  .redes h4 {
+    font-size: 18px; /* Reducción del tamaño de fuente para dispositivos móviles */
+    margin-bottom: 10px; /* Ajuste del margen inferior */
+    text-align: center;
+  }
+
+  .search-box {
+    width: 100%; /* Ancho completo para dispositivos móviles */
+    margin-bottom: 20px; /* Ajuste del margen inferior */
+  }
+
+  .search-field {
+    left: 0; /* Restaurar posición original */
+  }
+
+  .input {
+    width: calc(100% - 62px); /* Ajuste del ancho del campo de entrada */
+    padding-right: 40px; /* Ajuste del padding derecho */
+  }
+
+  .search-box-icon {
+  right: 0;
+  }
+
+  .socials {
+    margin-left: 5px;
+    width: 100%; /* Ancho completo para dispositivos móviles */
+    justify-content: center; /* Alineación central para dispositivos móviles */
+  }
+
+  .socials .icono-r {
+  }
+}
+
+</style>

@@ -1,0 +1,291 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<header>
+    <div class="left">
+        <div class="img">
+        <img src="/img/logo.png" alt="logo Polimericos">
+        </div>
+        <div class="logo_nombre">
+            <h2>Polimericos Dial de Co</h2>
+            <p>Equipo profesional en diferentes areas</p>
+        </div>
+    </div>
+
+    <nav>
+      <div class="container-input">
+        <input type="search" placeholder="Buscar..." name="text" class="input">
+        <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+          <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+      </svg>
+      </div>
+      
+      <div class="right">
+        <a href="">
+        <button class="Btn">
+    
+          <div class="sign"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></div>
+
+          <div class="text">Asesor</div>
+        </button>
+</a>
+
+        <a href="/courses">
+        <button class="Btn">
+    
+          <div class="sign"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg></div>
+
+          <div class="text">Cursos</div>
+        </button>
+      </a>
+        
+        
+        <button class="Btn">
+    
+          <div class="sign"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></div>
+          
+          <div class="text">Carrito</div>
+        </button>
+        
+        <a href="">
+        <button class="Btn">
+    
+          <div class="sign"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></div>
+          
+          <div class="text">Login</div>
+        </button>
+        </a>
+        
+                          
+      </div>
+    </nav>
+</header>
+
+<script>
+  window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  header.classList.toggle("abajo", window.scrollY > 0);
+});
+</script>
+<style>
+header{
+  transition: 1s;
+    position: fixed;
+    top: -3px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 99999;
+    background-color: var(--white);
+
+    
+}
+header.abajo {
+    transition: .6s;
+    background-color: var(--white);
+    padding: 10px 20px;
+    box-shadow: var(--shadow);
+}
+
+.left{
+    
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+.img{
+    display: grid;
+    place-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right:15px;
+    background-color: var(--caoba);
+}
+.img img{
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+}
+.logo_nombre h2{
+font-size: 30px;
+}
+.logo_nombre p{
+  font-size: 18px;
+  margin-top: -10px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 50%;
+  
+}
+.container-input {
+  position: relative;
+}
+
+.input {
+  width: 150px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 30px;
+  border: solid 1px #333;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 300px;
+}
+.right{
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+}
+ 
+.Btn{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: var(--gold);
+  margin: 0 5px;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 20px;
+}
+
+.sign svg path {
+  fill: var(--white);
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 110px;
+  border-radius: 10px;
+  transition-duration: .3s;
+  background-color: var(--caoba);
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 15px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 5px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translateY(-6px);
+}
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  header.abajo {
+    transition: .6s;
+    background-color: var(--white);
+    padding: 10px 5px;
+    box-shadow: var(--shadow);
+}
+header.abajo .left{
+  display: none;
+  transition: .6s;
+}
+  .left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .img {
+    margin-right: 15px;
+  }
+  
+  .logo_nombre h2 {
+    font-size: 22px;
+  }
+  
+  .logo_nombre p {
+    font-size: 12px;
+    margin-top: -5px;
+  }
+  
+  nav {
+    width: 100%;
+  }
+  
+  .container-input {
+    width: 100%;
+    margin-right: 5px;
+  }
+  
+  .input {
+    width: 100%;
+  }
+  
+  .Btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .sign svg {
+    width: 18px;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+}
+
+</style>
