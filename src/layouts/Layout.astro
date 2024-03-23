@@ -29,6 +29,17 @@ const { title } = Astro.props;
     <Footer />
     <Derechos />
   </body>
+  <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (header) {
+        header.classList.toggle("abajo", window.scrollY > 0);
+      }
+    });
+  });
+  </script>
 </html>
 
 <style is:global>
