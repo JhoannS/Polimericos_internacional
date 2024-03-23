@@ -1,4 +1,12 @@
 ---
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (header) {
+        header.classList.toggle("abajo", window.scrollY > 0);
+      }
+    });
+  });
 ---
 
 <header>
@@ -62,12 +70,7 @@
       </div>
     </nav>
 </header>
-<script>
-  window.addEventListener("scroll", function () {
-  const header = document.querySelector("header");
-  header.classList.toggle("abajo", window.scrollY > 0);
-});
-</script>
+
 <style>
 header{
   transition: 1s;
