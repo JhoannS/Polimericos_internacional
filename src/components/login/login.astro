@@ -1,0 +1,217 @@
+<section>
+  <div class="contenedor">
+    <div class="left box">
+        <form action="#" method="post">
+      <h2>¿Has estado aquí antes? Accede</h2>
+      <p>O regístrate con tu correo electrónico:</p>
+      <div class="input-group">
+        <label class="label">Correo electrónico</label>
+        <input
+          autocomplete="off"
+          name="Email"
+          id="Email"
+          class="input"
+          type="email"
+        />
+        <div></div>
+      </div>
+
+      <div class="input-group">
+        <label class="label">Contraseña</label>
+        <input
+          autocomplete="off"
+          name="Email"
+          id="Email"
+          class="input"
+          type="password"
+        />
+        <div></div>
+      </div>
+      <button>
+        <span>Entrar</span>
+      </button>
+    </form>
+    </div>
+    <div class="right box">
+      <h2>¿Todavía no eres socio? ¡Regístrate ahora!</h2>
+      <p>¡Deberías hacerlo ya!</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+  }
+  .box {
+    padding: 200px 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    width: 50%;
+    background-color: var(--white);
+  }
+  form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .box h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .box p {
+    font-size: 18px;
+  }
+  .input {
+    width: 100%;
+    height: 44px;
+    background-color: #05060f0a;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition:
+      border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+      color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+      background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  }
+
+  .input:hover,
+  .input:focus,
+  .input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+  }
+
+  .input-group:hover .label,
+  .input:focus {
+    color: #05060fc2;
+  }
+  button {
+    position: relative;
+    margin: 0;
+    padding: 25px 1em;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--caoba);
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    width: 100%;
+    height: 44px;
+  }
+
+  button:hover {
+    animation: sh0 0.5s ease-in-out both;
+  }
+
+  @keyframes sh0 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+      transform: rotate(2deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+      transform: rotate(-2deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+
+  button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+
+  button::before,
+  button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition:
+      transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1),
+      opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+  }
+
+  button:hover::before,
+  button:hover::after {
+    opacity: 0.15;
+    transition:
+      transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
+      opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+
+  button:hover::before {
+    transform: translate3d(50%, 0, 0) scale(0.9);
+  }
+
+  button:hover::after {
+    transform: translate(50%, 0) scale(1.1);
+  }
+
+  .right {
+    width: 50%;
+    color: var(--white);
+    background: url("../img/login-r.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+   /* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .contenedor{
+        display: block;
+        text-align: center;
+    }
+    .box{
+        width: 100%;
+        padding: 100px 20px;
+    }
+}
+</style>
